@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>扫码听音频目录</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>音频目录</h1>
+      <p id="environmentHint" class="hint"></p>
+      <p id="statusMessage" class="status loading">加载中...</p>
+
+      <section id="listSection" class="hidden">
+        <h2>可播放列表</h2>
+        <ul id="audioList" class="audio-list"></ul>
+      </section>
+
+      <section id="playerSection" class="hidden">
+        <h2>正在播放</h2>
+        <p id="nowPlaying" class="now-playing">未选择</p>
+        <audio id="audioPlayer" controls preload="none"></audio>
+        <p id="trackError" class="error hidden"></p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

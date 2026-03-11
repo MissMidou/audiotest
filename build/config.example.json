@@ -1,0 +1,6 @@
+{
+  "sourceDir": ".",
+  "outputDir": "dist",
+  "audioExtensions": [".flac", ".mp3", ".wav", ".m4a", ".ogg"],
+  "audioOutputSubdir": "audio"
+}

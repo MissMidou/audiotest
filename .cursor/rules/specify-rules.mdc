@@ -1,0 +1,34 @@
+﻿---
+description: Project Development Guidelines
+globs: ["**/*"]
+alwaysApply: true
+---
+# test Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2026-03-11
+
+## Active Technologies
+
+- HTML/CSS/JavaScript（前端）；构建脚本 Python 3.10+ 或 Node 18+（二选一，见 research.md） + 无框架依赖；可选轻量构建工具（如脚本内联列表或生成 manifest.json） (001-wechat-audio-qrcode)
+
+## Project Structure
+
+```text
+src/
+tests/
+```
+
+## Commands
+
+cd src; pytest; ruff check .
+
+## Code Style
+
+HTML/CSS/JavaScript（前端）；构建脚本 Python 3.10+ 或 Node 18+（二选一，见 research.md）: Follow standard conventions
+
+## Recent Changes
+
+- 001-wechat-audio-qrcode: Added HTML/CSS/JavaScript（前端）；构建脚本 Python 3.10+ 或 Node 18+（二选一，见 research.md） + 无框架依赖；可选轻量构建工具（如脚本内联列表或生成 manifest.json）
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->
