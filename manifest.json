@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "id": "06-最伟大的作品",
+      "label": "06. 最伟大的作品",
+      "url": "audio/06. 最伟大的作品.flac",
+      "filename": "06. 最伟大的作品.flac"
+    },
+    {
+      "id": "孤勇者",
+      "label": "孤勇者",
+      "url": "audio/孤勇者.flac",
+      "filename": "孤勇者.flac"
+    }
+  ],
+  "generatedAt": "2026-03-11T08:01:45.008835+00:00"
+}
