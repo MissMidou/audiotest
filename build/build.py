@@ -20,6 +20,12 @@ def slugify(value: str) -> str:
     return text or "track"
 
 
+def display_label(stem: str) -> str:
+    # Remove common track number prefixes like "06. " or "01- "
+    normalized = re.sub(r"^\s*\d+\s*[.\-、]\s*", "", stem)
+    return normalized.strip() or stem
+
+
 def load_config() -> dict:
     path = CONFIG_PATH if CONFIG_PATH.exists() else FALLBACK_CONFIG_PATH
     with path.open("r", encoding="utf-8") as f:
@@ -100,7 +106,7 @@ def build_manifest(audio_files: list[Path], output_dir: Path, audio_subdir: str)
         items.append(
             {
                 "id": item_id,
-                "label": stem,
+                "label": display_label(stem),
                 "url": f"{audio_subdir}/{target_name}".replace("\\", "/"),
                 "filename": src.name,
             }
